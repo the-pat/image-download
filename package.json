@@ -1,0 +1,26 @@
+{
+    "name": "image-download",
+    "version": "1.0.0",
+    "description": "Download an image from the given URL",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/the-pat/image-download.git"
+    },
+    "author": "the-pat",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/the-pat/image-download/issues"
+    },
+    "homepage": "https://github.com/the-pat/image-download#readme",
+    "dependencies": {
+        "got": "^7.1.0",
+        "image-type": "^3.0.0"
+    },
+    "engines": {
+        "node": ">=7.6"
+    }
+}
