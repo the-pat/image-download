@@ -1,35 +1,41 @@
 {
-				"name": "image-download",
-				"version": "1.0.0",
-				"description": "Download an image from the given URL",
-				"license": "MIT",
-				"repository": "the-pat/image-download",
-				"author": {
-								"name": "Patrick Tone",
-								"email": "pt@patrickt.one",
-								"url": "patrickt.one"
-				},
-				"engines": {
-								"node": ">=7.6"
-				},
-				"scripts": {},
-				"files": [
-								"index.js"
-				],
-				"keywords": [
-								"image",
-								"download",
-								"buffer",
-								"picture",
-								"photo",
-								"online",
-								"internet",
-								"webpage",
-								"website",
-								"background"
-				],
-				"dependencies": {
-								"got": "^7.1.0",
-								"image-type": "^3.0.0"
-				}
+	"name": "image-download",
+	"version": "1.0.0",
+	"description": "Download an image from the given URL",
+	"license": "MIT",
+	"repository": "the-pat/image-download",
+	"author": {
+		"name": "Patrick Tone",
+		"email": "pt@patrickt.one",
+		"url": "patrickt.one"
+	},
+	"engines": {
+		"node": ">=7.6"
+	},
+	"scripts": {
+		"test": "ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"image",
+		"download",
+		"buffer",
+		"picture",
+		"photo",
+		"online",
+		"internet",
+		"webpage",
+		"website",
+		"background"
+	],
+	"dependencies": {
+		"got": "^7.1.0",
+		"image-type": "^3.0.0",
+		"is-url-superb": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "^0.23.0"
+	}
 }
