@@ -1,4 +1,6 @@
-# image-download [![NPM](https://nodei.co/npm/image-download.png?mini=true)](https://nodei.co/npm/image-download/)
+# image-download 
+
+[![Build Status](https://travis-ci.org/the-pat/image-download.svg?branch=master)](https://travis-ci.org/the-pat/image-download)
 
 > Download an image from the given URL.
 
