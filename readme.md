@@ -1,4 +1,4 @@
-# image-download
+# image-download [![NPM](https://nodei.co/npm/image-download.png?mini=true)](https://nodei.co/npm/image-download/)
 
 > Download an image from the given URL.
 
