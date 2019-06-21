@@ -6,8 +6,8 @@
 	"repository": "the-pat/image-download",
 	"author": {
 		"name": "Patrick Tone",
-		"email": "pt@patrickt.one",
-		"url": "patrickt.one"
+		"email": "me@patrickt.one",
+		"url": "https://patrickt.one/"
 	},
 	"engines": {
 		"node": ">=7.6"
@@ -36,6 +36,6 @@
 		"is-url-superb": "^2.0.0"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0"
+		"ava": "^2.1.0"
 	}
 }

@@ -4,7 +4,7 @@ import test from 'ava';
 import imageDownload from './';
 
 test('returns buffer', async t => {
-    const value = await imageDownload('https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png');
+    const value = await imageDownload('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
     t.true(Buffer.isBuffer(value));
 });
 
