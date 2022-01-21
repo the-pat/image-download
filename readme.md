@@ -1,6 +1,6 @@
 # image-download
 
-[![Node.js Package](https://github.com/the-pat/image-download/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/the-pat/image-download/actions/workflows/npm-publish.yml)
+[![image-download](https://github.com/the-pat/image-download/actions/workflows/node.js.yml/badge.svg)](https://github.com/the-pat/image-download/actions/workflows/node.js.yml)
 
 > Download an image from the given URL.
 
