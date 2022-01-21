@@ -1,6 +1,6 @@
-# image-download 
+# image-download
 
-[![Build Status](https://travis-ci.org/the-pat/image-download.svg?branch=master)](https://travis-ci.org/the-pat/image-download)
+[![Node.js Package](https://github.com/the-pat/image-download/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/the-pat/image-download/actions/workflows/npm-publish.yml)
 
 > Download an image from the given URL.
 
@@ -13,14 +13,16 @@ npm install --save image-download
 ## Usage
 
 ```js
-const fs = require('fs');
-const imageDownload = require('image-download');
-const imageType = require('image-type');
+const fs = require("fs");
+const imageDownload = require("image-download");
+const imageType = require("image-type");
 
-imageDownload('https://www.fillmurray.com/g/200/300').then(buffer => {
-    const type = imageType(buffer);
+imageDownload("https://www.fillmurray.com/g/200/300").then((buffer) => {
+  const type = imageType(buffer);
 
-    fs.writeFile('bill-murray.' + type.ext, buffer, (err) => console.log(err ? err : 'done!'));
+  fs.writeFile("bill-murray." + type.ext, buffer, (err) =>
+    console.log(err ? err : "done!")
+  );
 });
 ```
 
