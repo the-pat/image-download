@@ -1,15 +1,26 @@
-import got from "got";
+import https from "https";
 import imageType from "image-type";
 import isUrl from "is-url-superb";
 
-export default async (url) => {
+export default (url) => {
   if (!(url && isUrl(url))) throw new TypeError("A valid url is required");
 
-  const response = await got(url, { encoding: null });
-  const buffer = Buffer.from(response.body, "binary");
-  const type = imageType(buffer);
+  return new Promise((resolve) => {
+    https.get(url, (response) => {
+      let data = Buffer.from([], "binary");
 
-  if (!type) return null;
+      response.on("data", (chunk) => {
+        const buffer = Buffer.from(chunk, "binary");
+        const length = data.length + buffer.length;
 
-  return buffer;
+        data = Buffer.concat([data, buffer], length);
+      });
+
+      response.on("end", () => {
+        const type = imageType(data);
+
+        return type ? resolve(data) : resolve(null);
+      });
+    });
+  });
 };

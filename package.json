@@ -32,9 +32,8 @@
     "background"
   ],
   "dependencies": {
-    "got": "^7.1.0",
-    "image-type": "^3.0.0",
-    "is-url-superb": "^2.0.0"
+    "image-type": "^4.1.0",
+    "is-url-superb": "^6.1.0"
   },
   "devDependencies": {
     "ava": "^3.9.0"
