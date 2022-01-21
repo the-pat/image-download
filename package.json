@@ -1,7 +1,7 @@
 {
   "name": "image-download",
   "type": "module",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Download an image from the given URL",
   "license": "MIT",
   "repository": "the-pat/image-download",
