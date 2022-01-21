@@ -1,6 +1,8 @@
 # image-download
 
-[![image-download](https://github.com/the-pat/image-download/actions/workflows/node.js.yml/badge.svg)](https://github.com/the-pat/image-download/actions/workflows/node.js.yml)
+[![image-download](https://img.shields.io/npm/v/image-download?label=image-download)](https://www.npmjs.com/package/image-download)
+[![build](https://img.shields.io/github/workflow/status/the-pat/image-download/Node.js%20CI)](https://github.com/the-pat/image-download/actions/workflows/node.js.yml)
+![code size](https://img.shields.io/github/languages/code-size/the-pat/image-download)
 
 > Download an image from the given URL.
 
