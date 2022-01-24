@@ -1,6 +1,6 @@
 {
   "name": "image-download",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Download an image from the given URL",
   "license": "MIT",
   "repository": "the-pat/image-download",

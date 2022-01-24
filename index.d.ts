@@ -1,3 +1,12 @@
+/// <reference types="node"/>
+
+import { ImageTypeResult } from 'image-type';
+
+interface ImageBufferAndType {
+    buffer: Buffer | null,
+    type: ImageTypeResult,
+}
+
 /**
 Download an image from the given URL.
 
@@ -15,4 +24,5 @@ imageDownload('https://www.fillmurray.com/g/200/300').then(buffer => {
 });
 ```
 */
-export default function imageDownload(url: string): Promise<Buffer>;
+export default function imageDownload(url: string): Promise<Buffer | null>;
+export function withType(url: string): Promise<ImageBufferAndType>;

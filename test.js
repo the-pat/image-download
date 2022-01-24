@@ -42,3 +42,12 @@ test("rejects empty string url", async (t) => {
     t.is(err.message, "A valid url is required");
   }
 });
+
+test("returns a buffer and type", async (t) => {
+    const {buffer, type} = await imageDownload.withType(
+        "https://www.placecage.com/gif/200/300");
+    t.true(Buffer.isBuffer(buffer));
+    t.is(typeof type, "object");
+    t.is(type.ext, "gif");
+    t.is(type.mime, "image/gif")
+});

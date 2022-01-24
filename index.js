@@ -4,7 +4,7 @@ const https = require('https');
 const imageType = require("image-type");
 const isUrl = require("is-url-superb");
 
-module.exports = (url) => {
+const imageDownload = (url, includeType) => {
   if (!(url && isUrl(url))) throw new TypeError("A valid url is required");
 
   return new Promise((resolve) => {
@@ -21,8 +21,19 @@ module.exports = (url) => {
       response.on("end", () => {
         const type = imageType(data);
 
-        return type ? resolve(data) : resolve(null);
+        if (includeType) {
+            return type
+                ? resolve({buffer: data, type})
+                : resolve({buffer: null, type});
+        } else {
+            return type
+                ? resolve(data)
+                : resolve(null);
+        }
       });
     });
   });
 };
+
+module.exports = (url) => imageDownload(url, false);
+module.exports.withType = (url) => imageDownload(url, true);

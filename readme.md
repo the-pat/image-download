@@ -23,7 +23,16 @@ imageDownload("https://www.fillmurray.com/g/200/300").then((buffer) => {
   const type = imageType(buffer);
 
   fs.writeFile("bill-murray." + type.ext, buffer, (err) =>
-    console.log(err ? err : "done!")
+    console.log(err ? err : "done!");
+  );
+});
+
+imageDownload.withType("https://www.placecage.com/gif/200/300").then({buffer, type} => {
+  console.log(type);
+  //=> {ext: 'gif', mime: 'image/gif'}
+
+  fs.writeFile(`nicolas-cage.${type.ext}`, buffer, (err) =>
+    console.log(err ? err : "done!");
   );
 });
 ```
