@@ -1,5 +1,5 @@
-import test from "ava";
-import imageDownload from "./index.js";
+const test = require("ava");
+const imageDownload = require("./index");
 
 test("returns buffer", async (t) => {
   const value = await imageDownload(

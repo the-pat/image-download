@@ -1,13 +1,12 @@
 {
   "name": "image-download",
-  "type": "module",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "description": "Download an image from the given URL",
   "license": "MIT",
   "repository": "the-pat/image-download",
   "author": {
     "name": "Patrick Tone",
-    "email": "me@patrickt.one",
+    "email": "image-download@patrickt.one",
     "url": "https://patrickt.one/"
   },
   "engines": {
@@ -33,7 +32,7 @@
   ],
   "dependencies": {
     "image-type": "^4.1.0",
-    "is-url-superb": "^6.1.0"
+    "is-url-superb": "^5.0.0"
   },
   "devDependencies": {
     "ava": "^3.9.0"

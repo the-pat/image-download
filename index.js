@@ -1,8 +1,10 @@
-import https from "https";
-import imageType from "image-type";
-import isUrl from "is-url-superb";
+"use strict";
 
-export default (url) => {
+const https = require('https');
+const imageType = require("image-type");
+const isUrl = require("is-url-superb");
+
+module.exports = (url) => {
   if (!(url && isUrl(url))) throw new TypeError("A valid url is required");
 
   return new Promise((resolve) => {
